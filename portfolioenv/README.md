@@ -10,6 +10,9 @@ Screenshots
 
 ![2](https://user-images.githubusercontent.com/57212041/70392955-77413e80-1a28-11ea-8771-fdb15adbc47c.png)
 
+![3](https://user-images.githubusercontent.com/57212041/70393007-fd5d8500-1a28-11ea-889c-9d70eccc147a.png)
+
+
 <div>
   <img src="" alt="">
   <img src="" alt="">
