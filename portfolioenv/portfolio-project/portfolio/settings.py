@@ -30,6 +30,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'dinolists.apps.DinolistsConfig',
     'blog.apps.BlogConfig',
     'friends.apps.FriendsConfig',
     'details.apps.DetailsConfig',
