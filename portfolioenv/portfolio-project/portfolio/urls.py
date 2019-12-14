@@ -24,9 +24,9 @@ import dinolists.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('detail/',details.views.detail),
-    path('list/',dinolists.views.index),
+    path('list/',dinolists.views.dlist),
     path('', friends.views.home, name = "home"),
-    path('', dinolists.views.index, name = "index"),
+    
 ] + static(settings.MEDIA_URL,
 	   document_root = settings.MEDIA_ROOT)
 
