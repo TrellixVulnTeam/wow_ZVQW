@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'dinolists.apps.DinolistsConfig',
-    'blog.apps.BlogConfig',
     'friends.apps.FriendsConfig',
     'details.apps.DetailsConfig',
     'django.contrib.admin',
@@ -119,6 +118,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'portfolio/static')
 ]
