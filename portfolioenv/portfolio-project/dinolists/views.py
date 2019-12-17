@@ -2,9 +2,6 @@ from django.shortcuts import render
 from .models import Dinolist
 # Create your views here.
 def dlist(request):
-	dinolists = Dinolist.objects.all
+	dinolists = Dinolist.objects
 
-	print(dinolists)
-	print("343242")
-
-	return render(request, 'list.html', {'dinolists' : dinolists})
+	return render(request, 'list.html', {'dinolists' : dinolists, 'count': dinolists.count()})
