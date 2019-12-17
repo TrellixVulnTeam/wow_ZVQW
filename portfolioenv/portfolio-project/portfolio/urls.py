@@ -23,8 +23,8 @@ import dinolists.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('detail/',details.views.detail),
     path('list/',dinolists.views.dlist),
+    path('detail/<name>',details.views.detail),
     path('', friends.views.home, name = "home"),
     
 ] + static(settings.MEDIA_URL,

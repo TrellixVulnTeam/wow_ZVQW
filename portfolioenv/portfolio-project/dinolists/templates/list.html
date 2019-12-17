@@ -92,20 +92,20 @@ $(document).ready(function(){
 
       <!-- Portfolio Grid Items -->
       <div class="row">
-      {% for i in dinolists.all %}
+      {% for i in dinolists %}
         <div class="col-md-6 col-lg-4">
-          
+
           <div id="cap" class="portfolio-item mx-auto">
           
             <div class="d-flex align-items-center justify-content-center h-100 w-100">
             
             </div>
-            <a href=""><img class="img-fluid" src='{{i.image.url}}' alt=""></a>
-            <input type="hidden" name="index" value= "{{j}}"></input>
+            <a href="../detail/{{i.name}}"><img class="img-fluid" src='{{i.image.url}}' alt=""></a>
+            <input type="hidden" name="index" value= "{{forloop.counter}}"></input>
 
           </div>
 
-          <p>{{i.name}}</p>
+          <p style="background-color:aliceblue">{{i.name}}</p>
 
         </div>
       {% endfor %}
