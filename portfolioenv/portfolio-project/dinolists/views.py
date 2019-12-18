@@ -5,4 +5,6 @@ from .models import Dinolist
 def dlist(request):
 	dinolists = Dinolist.objects
 
-	return render(request, 'list.html', {'dinolists' : dinolists.all, 'count': range(dinolists.count())})
+	return render(request, 'list.html',
+	{'dinolists' : dinolists.all })
+
