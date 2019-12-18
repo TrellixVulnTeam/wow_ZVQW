@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'dinolists.apps.DinolistsConfig',
-    'friends.apps.FriendsConfig',
+    'home.apps.HomeConfig',
     'details.apps.DetailsConfig',
     'django.contrib.admin',
     'django.contrib.auth',

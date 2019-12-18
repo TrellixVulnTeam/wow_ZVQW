@@ -95,17 +95,17 @@ $(document).ready(function(){
       {% for i in dinolists %}
         <div class="col-md-6 col-lg-4">
 
-          <div id="cap" class="portfolio-item mx-auto">
+          <div id="cap" class="portfolio-item mx-auto" style="margin-bottom:15px;">
           
             <div class="d-flex align-items-center justify-content-center h-100 w-100">
             
             </div>
-            <a href="../detail/{{i.name}}"><img class="img-fluid" src='{{i.image.url}}' alt=""></a>
+            <a href="../detail/{{i.name}}"><img class="img-fluid" src='{{i.image.url}}' style ="width:400px; height:200px; "        alt=""></a>
             <input type="hidden" name="index" value= "{{forloop.counter}}"></input>
 
           </div>
 
-          <p style="background-color:aliceblue">{{i.name}}</p>
+          <p style="text-align:center; font-weight:900;font-size:20px">{{i.name}}</p>
 
         </div>
       {% endfor %}
@@ -143,20 +143,7 @@ $(document).ready(function(){
     </a>
   </div>
 
-  
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!-- Contact Form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
-
-  <!-- Custom scripts for this template -->
-  <script src="js/freelancer.min.js"></script>
 
 </body>
 
